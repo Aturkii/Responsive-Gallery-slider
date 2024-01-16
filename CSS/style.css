@@ -1,0 +1,93 @@
+.img-cards .card img {
+  transition: all 0.7s ease-in-out;
+  cursor: pointer;
+}
+
+.img-cards .card:hover img {
+  transform: scale(1.1);
+}
+
+.card-description {
+  bottom: 15px;
+  width: 75%;
+  background-color: rgb(213, 248, 248);
+  opacity: 0.85;
+  transition: all 0.7s ease-in-out;
+}
+
+.boxi {
+  margin: auto;
+  width: 90%;
+  height: 90vh;
+}
+
+.x {
+  right: 10px;
+  font-size: 3rem;
+  cursor: pointer;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.z {
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .z {
+    display: none;
+  }
+}
+
+.light-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#prevBtn {
+  cursor: pointer;
+  top: 50%;
+  left: -50px;
+  color: #fff;
+}
+
+#nextBtn {
+  cursor: pointer;
+  color: #fff;
+  top: 50%;
+  right: -50px;
+}
+
+
+
+.img-cards .card:hover .card-description {
+  transform: translateY(-10px);
+  opacity: 0.7;
+}
+
+.x {
+  transition: color 0.3s ease-in-out;
+}
+
+.x:hover {
+  color: #ff7f50;
+}
+
+@media only screen and (max-width: 600px) {
+  .img-cards .card:hover img {
+    transform: scale(1.05);
+  }
+
+  .card-description {
+    width: 100%;
+  }
+
+  #prevBtn,
+  #nextBtn {
+    font-size: 1.5rem;
+  }
+}
